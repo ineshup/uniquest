@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>  UniQuest</title>
+    <meta name="pearlhack2022" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="pearlhack2022.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>UniQuest</h1>
+        <p>Created by Students for students</p>
+    </div>
+<!-- Insert navbar Banner with Links that's just copy paste(?) :D-->
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<h1>Create Quest</h1>
+
+<div style="background-color:rgb(148, 129, 129);color:black;padding:20px;">
+    <h2>Quest</h2>
+<!-- these divs should be just a small block; mot sure how to make it just a small blockcolors temporary-->
+
+<div style="background-color:rgb(212, 198, 198);color:black;padding:20px;">
+
+    <label for="questname">Name your Quest</label> <!-- how does the text stay in the box?-->
+    <input type="text" id="questname" name="questname"><br>
+   
+</div>
+
+<div style="background-color:rgb(219, 193, 193);color:black;padding:20px;">
+    
+    <p><label for="description">Quest Description (what are you giving?)</label> 
+        <!-- input a bit of space -->
+        <input type="text" id="description" name="description"><br></p></div>
+
+
+    <p><div style="background-color:rgb(219, 193, 193);color:black;padding:20px;">
+    
+        <p><label for="reward">Reward (what do you want in return?)</label> 
+            <!-- input a bit of space -->
+            <input type="text" id="reward" name="reward"><br></p></div></p>
+
+            <p>Is this Quest time sensivite? 
+                <label for="enddate">By when:</label>
+                <input type="date" id="enddate" name="enddate">
+                <input type="submit"></p>
+            <input type="submit" value="Submit">
+</div>
+</div>
+</body>
+</html>
+
