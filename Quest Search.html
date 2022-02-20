@@ -37,35 +37,110 @@
     </div>
 </nav>
 
-<h1>Search Quest</h1>
+<h1>Search Quests</h1>
 
-
-
-<div style="background-color:rgb(148, 129, 129);color:black;padding:20px;">
-    <h2>Quest</h2>
+<div style="background-color:rgb(255, 246, 239);color:black;padding:20px;">
 <!-- these divs should be just a small block; mot sure how to make it just a small blockcolors temporary-->
 <!-- added p, not sure if needed? They're just to be two floating input boxes-->
 <div class="topnav">
     <input type="text" placeholder="Search..">
-  </div> 
-
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-    <div id="myDropdown" class="dropdown-content">
-      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-      <a href="#Books">Books</a>
-      <a href="#Study Buddy">Study Buddy</a>
-      <a href="#Art">Art</a>
-      <a href="#Food">Food</a>
-      <a href="#Tutoring">Tutoring</a>
-    </div>
   </div>  
 
-<div style="background-color:rgb(219, 193, 193);color:black;padding:20px;"><p><a href="create want.html"></a></p></div>
 
-<div style="background-color:rgb(219, 193, 193);color:black;padding:20px;"><p><a href="create give.html"></a></p></div>
+  <label for="cars">Filter:</label>
+  <select name="item" id="item">
+    <option value="Books">Books</option>
+    <option value="Study Buddy">Study Buddy</option>
+    <option value="Art">Art</option>
+    <option value="Food">Food</option>
+    <option value="Tutoring">Tutoring</option>
+    <option value="Other">Other</option>
+  </select> 
 
-<button type="button">Save</button> 
+  <br>
+
+  <br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ffd0a3;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Quest 1</h3>
+      <p>Description</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Quest 2</h3>
+      <p>Description</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Quest 3</h3>
+      <p>Description</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Quest 4</h3>
+      <p>Description</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<button type="button">Save</button>
 </div>
 </body>
 </html>
